@@ -53,12 +53,13 @@ div.main{
 background-image:url(sign.jpg);
 margin:20px;}
 table{
-margin:20px;
+margin:10px;
 }
 img{
 width:750px;
 height:650px;
-margin:30px;
+margin:20px;
+align:left;
 }
 h2{
 margin:30px;
@@ -66,6 +67,61 @@ margin:30px;
 p.inside{
 font-size:18px;
 }
+.sign{
+display:table;
+padding:10px;
+}
+.row{
+display:table-row;
+
+}
+.row label{
+display:table-cell;
+padding:5px;
+
+}
+.row input{
+display:table-cell;
+padding:5px;
+}
+.button{
+padding:10px;
+background-color:#52BE80;
+align:center;
+border-radius:5px;
+}
+.check{
+padding:5px;
+}
+div.last1{
+background-color:#273746;
+margin:10px;
+margin-top:10px;
+}
+td.four{
+align:left;
+}
+p.para5{
+font-size:20px;
+font-weight:bold;
+color:black;
+}
+ul.new3{
+list-style:none;
+line-height:1.5em;
+}
+ul.new3 li a{
+color:white;
+text-decoration:none;
+font-size:15px;
+
+}
+ul.new3 li a:hover{
+color:black;
+}
+
+
+
 </style>
 </head>
 <body>
@@ -89,21 +145,67 @@ font-size:18px;
 <td align="center" valign="top">
 <h2>Create An Account Free</h2>
 <p class="inside">Create account in 30 secondes.No credit card required.<br>Already have an account? <a href="#">Log Here</a></p>
-<form>
-First Name   :
+<br>
+<br>
+<form class="sign">
+<div class="row">
+<label for="First Name">First Name:</label>
 <input type="text"  text="First Name">
+
+</div>
 <br>
-<br>
-Last Name   :
+<div class="row">
+<label for="Last Name:">Last Name:</label>
 <input type="text"  text="Last Name">
+</div>
 <br>
-<br> 
-E-Mail Address:
+<div class="row">
+<label for="Occupation">Occupation:</label>
 <input type="text"   text="E-mail">
+</div>
+<br>
+<div class="row"> 
+<label for="E-Mail Address:">E-Mail Address:</label>
+<input type="text"   text="E-mail">
+</div>
+<br>
+
+<div class="row">
+<label for="Password">Password:</label>
+<input type="password"   text="Password">
+</div>
+
+<br><div class="row">
+<label for="Retype Password">Retype Password:</label>
+<input type="Password"   text="password">
+</div>
+<br>
+<label class="check" for="Agree to follow terms and conditions.">Agree to follow terms and conditions.</label>
+<input type="checkbox" text="Agree">
+<br>
+<br>
+<input class="button" type="button" text="Sign In" value="Sign In">
 </form>
 
 </td>
 </center>
+</table>
 </div>
+<div class="last1" align="left">
+<table class="quick">
+<tr class="last">
+<td class="four">
+<p class="para5">Quick Links</p>
+<ul class="new3">
+<li><a href=" ">Home</a></li>
+<li><a href=" ">Portfolio</a></li>
+<li><a href=" ">About</a></li>
+<li><a href=" ">Contact</a></li>
+<li><a href=" ">Sign in</a></li>
+</ul>
+</td>
+</div>
+
+
 </body>
 </html>
